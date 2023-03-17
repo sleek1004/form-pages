@@ -12,7 +12,7 @@ html {
 }
 .circle:hover {
     color: rgb(15, 3, 3);
-    background-color: rgb(186, 246, 246);
+    background-color: rgb(43, 107, 107);
     cursor: pointer;
   }
 
@@ -34,7 +34,8 @@ html {
   .side {
     margin-right: 20px;
     padding: 20px;
-    background-color: #6c99d9;
+    background-image:linear-gradient(rgb(57, 164, 231),navy );
+
   }
   
   .circle {
@@ -44,8 +45,8 @@ html {
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
-    background-color: #00a3e0;
-    color: #fff;
+    background-color:lightskyblue;
+    color:whitesmoke;
     font-size: 18px;
     margin-bottom: 10px;
      
@@ -60,6 +61,9 @@ html {
   h5 {
     margin-top: 0;
     margin-bottom: 5px;
+  }
+  .h1P{
+    color:rgb(9, 9, 105);
   }
   
   .form {
@@ -78,6 +82,12 @@ html {
     margin-bottom: 20px;
     color: grey;
   }
+  .sideP{
+    color:rgba(245, 245, 245, 0.628);
+  }
+  .sideH5{
+    color:white;
+  }
   
   .form input[type="name"],
   .form input[type="email"],
@@ -87,18 +97,21 @@ html {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
+    border: groove;
+    border-radius: 8px;
   }
   
-  .form button {
-    background-color: #00a3e0;
+  .firstButton {
+    background-color: navy;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
     width:98px;
     border: 4px;
+    margin-left: 356px;
+    border-radius: 5px;
+
   }
   
   @media (max-width: 768px) {
