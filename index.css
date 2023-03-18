@@ -35,6 +35,8 @@ html {
     margin-right: 20px;
     padding: 20px;
     background-image:linear-gradient(rgb(57, 164, 231),navy );
+    margin-right: 0;
+    margin-bottom: 20px;
 
   }
   
@@ -49,7 +51,12 @@ html {
     color:whitesmoke;
     font-size: 18px;
     margin-bottom: 10px;
+   
      
+  }
+  a {
+    text-decoration: none;
+    color:whitesmoke;
   }
   
   .info {
@@ -119,10 +126,6 @@ html {
       flex-direction: column;
     }
   
-    .side {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
   
     .form {
       width: 100%;
@@ -134,3 +137,12 @@ html {
     color: rgb(127, 176, 255);
   }*/
   
+  .page2 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    
+  }
