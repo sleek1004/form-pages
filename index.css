@@ -79,15 +79,18 @@ html {
   }
   
   .form h1 {
-    font-size: 24px;
+    font-size: 17px;
     margin-top: 0;
+    margin: 10px;
+    
   }
   
   .form p {
-    font-size: 14px;
+    font-size: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: grey;
+    margin: 10px;
   }
   .sideP{
     color:rgba(245, 245, 245, 0.628);
@@ -106,6 +109,7 @@ html {
     margin-bottom: 20px;
     border: groove;
     border-radius: 8px;
+    margin: 10px;
   }
   
   .firstButton {
@@ -137,12 +141,128 @@ html {
     color: rgb(127, 176, 255);
   }*/
   
-  .page2 {
-    background-color: white;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 70%;
+    padding: 25px;
+    height: 55%;
+  }
+  
+  .container > h1,
+  .container > p {
+    margin-top: 0;
+  }
+  
+  .header1 {
+    color: navy;
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+  
+  .plans-container {
+    display: flex;
+  }
+  
+  .plan1,
+  .plan2,
+  .plan3 {
+    flex: 1;
+    width: 70px;
+    padding: 15px;
+    border-style: ridge;
+    margin: 10px;
+  }
+  
+  #planP {
+    color: navy;
+    font-size: 15px;
+  }
+  
+  #pay {
+    color: grey;
+    font-size: 13px;
+  }
+  
+  .toggle {
+    position: relative;
     display: flex;
     align-items: center;
-    margin: auto;
-    width: 70%;
-    padding: 10px;
-    
+    margin-top: 20px;
+    background-color: rgb(193, 232, 232);
+    width:40%;
   }
+  
+  .toggle-label {
+    margin-right: 10px;
+  }
+  
+  .toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: relative;
+    cursor: pointer;
+    width: 55px;
+    height: 24px;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+    margin-right:10px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .page2button{
+    margin-top: 70px;
+  }
+  .backbutton {
+   margin-right:60px;
+   border: none;
+   background-color:white;
+   color:navy;
+   font-size: 10px;
+   padding: 3px;
+  
+  }
+  
+  .page2next{
+    margin-left: 190px;
+    background-color: navy;
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    border: 4px;
+    border-radius: 5px;
+   
+  }
+  
