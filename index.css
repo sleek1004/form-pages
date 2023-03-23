@@ -56,7 +56,7 @@ html {
   }
   a {
     text-decoration: none;
-    color:whitesmoke;
+    
   }
   
   .info {
@@ -114,7 +114,7 @@ html {
   
   .firstButton {
     background-color: navy;
-    color: #fff;
+    color:white;
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
@@ -123,6 +123,9 @@ html {
     margin-left: 356px;
     border-radius: 5px;
 
+  }
+  .firstButton >a{
+    color: whitesmoke;
   }
   
   @media (max-width: 768px) {
@@ -144,7 +147,6 @@ html {
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #fff;
     width: 70%;
@@ -167,14 +169,17 @@ html {
     display: flex;
   }
   
-  .plan1,
-  .plan2,
-  .plan3 {
+  .plan {
     flex: 1;
     width: 70px;
     padding: 15px;
     border-style: ridge;
     margin: 10px;
+  }
+
+  .plan.selected{
+    background-color: #2196F3;
+    color:yellow;
   }
   
   #planP {
@@ -191,9 +196,11 @@ html {
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top:10 px;
     background-color: rgb(193, 232, 232);
-    width:40%;
+    width:350px;
+    height: 35px;
+    padding-left:25px;
   }
   
   .toggle-label {
