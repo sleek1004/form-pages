@@ -1,0 +1,38 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container" onclick="click()">
+    <h1 class="header1">Select your plan</h1>
+    <p style="color:grey; font-size:12px;">You have the option of monthly or yearly biling</p>
+    <div class="plans-container">
+    <div class="plan">
+        <p id="planP">Arcade</p>
+        <p id="pay">$9/mo</p>
+        <p>2months</p>
+    </div>
+    <div class="plan">
+        <p id="planP">Advanced</p>
+        <p id="pay">$120/yearly</p>
+        <p>2months</p>
+    </div>
+    <div class="plan">
+        <p id="planP">Pro</p>
+        <p id="pay">$150/yearly</p>
+        <p>2months</p>
+    </div>
+</div>
+    <div class="toggle" onclick="togglecheckbox()">
+        <p class="toggle-label">Monthly</p>
+        <input type="checkbox" id="toggle-box">
+        <span class="slider"></span>
+        <p class="toggle-label">Yearly</p>
+      </div>
+      <div class="page2button">
+      <button class="backbutton"><a href="/index.html">Go Back</a></button>
+      <button class="page2next">Next Step</button>
+    </div>
+    </section>
