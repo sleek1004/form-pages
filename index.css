@@ -269,8 +269,16 @@ html {
     cursor: pointer;
     padding: 8px;
     border: 4px;
-    border-radius: 5px;
-   
+    border-radius: 5px; 
+  }
+  .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 70%;
+    padding: 25px;
+    height: 55%;
   }
   
   
