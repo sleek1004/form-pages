@@ -1,8 +1,10 @@
-html {
+body {
   padding-bottom: 65px;
-
   background-color: rgb(179, 208, 219);
   font-family: "Roboto", sans-serif;
+  align-content: center;
+  margin-left: 101px;
+  margin-top:89px;
 }
 .circle:hover {
   color: rgb(15, 3, 3);
@@ -258,5 +260,107 @@ input:checked + .slider:before {
   border: 4px;
   border-radius: 5px;
 }
-.cotainer2 {
+/* Style for the main container */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+  width:70%;
 }
+#pickH1{
+  color:navy;
+  margin-right: 299px;
+  margin-top: 5px;
+ 
+}
+#pickP{
+  margin-right:112px;
+  color: grey;
+  font-size: 14px;
+}
+/* Style for the pick container */
+#pick1, #pick2, #pick3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+box-sizing: border-box;
+width: 437px;
+height: 90px;
+left: px;
+top: px;
+background: #F7F7FF;
+border: 1px solid #14355D;
+border-radius: 20px;
+padding:px;
+}
+
+/* Style for the checkbox */
+#pick1 input[type="checkbox"],
+#pick2 input[type="checkbox"],
+#pick3 input[type="checkbox"] {
+  margin-right:298px;
+  margin-top: 25px;
+
+}
+
+/* Style for the h4 tag */
+#pick1 h4,
+#pick2 h4,
+#pick3 h4 {
+  font-size: 15px;
+  margin: 0;
+  color:navy;
+}
+
+
+/* Style for the p tag */
+#pick1 p,
+#pick2 p,
+#pick3 p {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+  color: grey;
+}
+
+/* Style for the amount */
+#pick1 #amount,
+#pick2 #amount,
+#pick3 #amount {
+  font-size: 13px;
+  font-weight: light;
+  margin: 0;
+  color: navy;
+  margin-left: 328px;
+  
+}
+
+/* Style for the buttons */
+button {
+
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.pickbackbutton {
+ color:grey;
+ margin-right:215px;
+ font-size: 11px;
+ background-color: inherit;
+ 
+}
+
+.Next {
+  background-color: navy;
+  font-size: 9px;
+}
+
