@@ -249,7 +249,7 @@ input:checked + .slider:before {
   padding: 3px;
 }
 
-.page2next {
+#pagenextbutton{
   margin-left: 190px;
   background-color: navy;
   color: #fff;
@@ -305,8 +305,10 @@ padding:px;
 #pick3 input[type="checkbox"] {
   margin-right:298px;
   margin-top: 25px;
+ 
 
 }
+
 
 /* Style for the h4 tag */
 #pick1 h4,
@@ -363,4 +365,5 @@ button {
   background-color: navy;
   font-size: 9px;
 }
+
 
