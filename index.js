@@ -1,3 +1,11 @@
+const nextBtn1 = document.getElementById("nextBtn1")
+
+nextBtn1.addEventListener('click',fuction(){
+  
+})
+
+
+
 let paragraphs = document.querySelectorAll(".duration");
 
 function togglecheckbox() {
