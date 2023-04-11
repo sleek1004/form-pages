@@ -1,8 +1,36 @@
-const nextBtn1 = document.getElementById("nextBtn1")
+const nameInput = document.querySelector('input[placeholder="Name"]');
+  const emailInput = document.querySelector('input[placeholder="Email"]');
+  const phoneInput = document.querySelector('input[placeholder="e.g. +1 2345673"]');
+  const nextButton = document.querySelector('.firstbutton');
 
-nextBtn1.addEventListener('click',fuction(){
-  
-})
+  // add event listener to the next button
+  nextButton.addEventListener('click', () => {
+    // check if any of the inputs are empty
+    if (nameInput.value === '') {
+      nameInput.nextElementSibling.style.display = 'block';
+    } else {
+      nameInput.nextElementSibling.style.display = 'none';
+    }
+    if (emailInput.value === '') {
+      emailInput.nextElementSibling.style.display = 'block';
+    } else {
+      emailInput.nextElementSibling.style.display = 'none';
+    }
+    if (phoneInput.value === '') {
+      phoneInput.nextElementSibling.style.display = 'block';
+    } else {
+      phoneInput.nextElementSibling.style.display = 'none';
+    }
+    
+    // prevent form submission if any input is empty
+    if (nameInput.value === '' || emailInput.value === '' || phoneInput.value === '') {
+      event.preventDefault();
+    } else {
+      // if all inputs are filled, go to the next page
+      window.location.href = 'page2.html';
+    }
+  });
+
 
 
 

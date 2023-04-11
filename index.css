@@ -374,5 +374,6 @@ button {
   background-color: navy;
   font-size: 9px;
 }
-
-
+.error-message{
+  color: red;
+}
