@@ -374,6 +374,14 @@ button {
   background-color: navy;
   font-size: 9px;
 }
-.error-message{
+.form {
+  position: relative;
+}
+.error-message {
+  position: absolute;
+  top: -15px;
+  right: 0;
   color: red;
+  font-size: 12px;
+
 }
