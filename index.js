@@ -1,47 +1,27 @@
-const form = document.querySelector('form');
-const nameInput = form.querySelector('input[type="text"][placeholder="Name"]');
-const emailInput = form.querySelector('input[type="text"][placeholder="Email"]');
-const phoneInput = form.querySelector('input[type="number"][placeholder="e.g. +1 2345673"]');
-const errorMessages = form.querySelectorAll('.error-message');
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  console.log("the  form is submitted");
-  
-  let isValid = true;
-
-  if (!nameInput.value) {
-    errorMessages[0].style.display = 'block';
-    isValid = false;
-  } else {
-    errorMessages[0].style.display = 'none';
-  }
-
-  if (!emailInput.value) {
-    errorMessages[1].style.display = 'block';
-    isValid = false;
-  } else {
-    errorMessages[1].style.display = 'none';
-  }
-
-  if (!phoneInput.value) {
-    errorMessages[2].style.display = 'block';
-    isValid = false;
-  } else {
-    errorMessages[2].style.display = 'none';
-  }
-
-  if (isValid) {
-    window.location.href = 'page2.html';
-  }
+let plans2 = document.querySelectorAll(".plan");
+let selectedPlan = null;
+plans2.forEach((plan) => {
+  plan.addEventListener("click", function () {
+    if (selectedPlan) {
+      selectedPlan.classList.remove("selected");
+    }
+    plan.classList.add("selected");
+    selectedPlan = plan;
+  });
 });
 
 
 
 
-let paragraphs = document.querySelectorAll(".duration");
+
 
 function togglecheckbox() {
+
+
+  let paragraphs = document.querySelectorAll(".duration");
+
+
   const checkbox = document.getElementById("toggle-box");
   checkbox.checked = !checkbox.checked;
 
@@ -70,23 +50,13 @@ function togglecheckbox() {
   }
 }
 
-const plans = document.querySelectorAll(".plan");
-let selectedPlan = null;
-plans.forEach((plan) => {
-  plan.addEventListener("click", function () {
-    if (selectedPlan) {
-      selectedPlan.classList.remove("selected");
-    }
-    plan.classList.add("selected");
-    selectedPlan = plan;
-  });
-});
+
 
 // Get the toggle button and the plans container
 const toggleBtn = document.getElementById("toggle-box");
 const plansContainer = document.querySelector(".plans-container");
 
-const nextBtn = document.getElementById("pagenextbutton");
+let nextBtn = document.getElementById("pagenextbutton");
 
 nextBtn.addEventListener("click", () => {
   const isYearly = toggleBtn.checked;
@@ -104,5 +74,50 @@ nextBtn.addEventListener("click", () => {
     }
 
     window.location.href = url;
+  }
+});
+
+const form = document.querySelector('form');
+const nameInput = form.querySelector('input[type="text"][placeholder="Name"]');
+const emailInput = form.querySelector('input[type="text"][placeholder="Email"]');
+const phoneInput = form.querySelector('input[type="number"][placeholder="e.g. +1 2345673"]');
+const errorMessages = form.querySelectorAll('.error-message');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  //console.log("the  form is submitted");//
+  
+  let isValid = true;
+
+  if (!nameInput.value) {
+    errorMessages[0].style.display = 'block';
+    nameInput.style.borderColor = 'red';
+    isValid = false;
+  } else {
+    errorMessages[0].style.display = 'none';
+    nameInput.style.borderColor = '';a
+  }
+
+  if (!emailInput.value) {
+    errorMessages[1].style.display = 'block';
+    emailInput.style.borderColor = 'red';
+    isValid = false;
+  } else {
+    errorMessages[1].style.display = 'none';
+    emailInput.style.borderColor = '';
+  }
+
+
+  if (!phoneInput.value) {
+    errorMessages[2].style.display = 'block';
+    phoneInput.style.borderColor ='red'
+    isValid = false;
+  } else {
+    errorMessages[2].style.display = 'none';
+    phoneInput.style.borderColor = '';
+  }
+
+  if (isValid) {
+    window.location.href = 'page2.html';
   }
 });

@@ -71,13 +71,12 @@ h5 {
     flex-direction: column;
   }
 
-  .form {
-    width: 100%;
-  }
+ 
 }
 .form {
   flex: 1;
   margin-bottom: 20px;
+  width:100%;
 }
 
 .form h1 {
@@ -121,6 +120,9 @@ h5 {
 }
 .firstButton > a {
   color: whitesmoke;
+}
+.toggle-label{
+  color:grey;
 }
 
 /*#label{
@@ -214,12 +216,6 @@ h5 {
   transition: 0.4s;
   border-radius: 34px;
   margin-right: 10px;
-  
-  
-
- 
- 
-
   background-color: #14355D;
 }
 
@@ -284,7 +280,6 @@ input:checked + .slider:before {
   color:navy;
   margin-right: 299px;
   margin-top: 5px;
- 
 }
 #pickP{
   margin-right:112px;
@@ -314,12 +309,7 @@ padding:px;
 #pick3 input[type="checkbox"] {
   margin-right:298px;
   margin-top: 25px;
- 
-
 }
-
-
-/* Style for the h4 tag */
 #pick1 h4,
 #pick2 h4,
 #pick3 h4 {
@@ -374,14 +364,12 @@ button {
   background-color: navy;
   font-size: 9px;
 }
-.form {
+.form,.error-message {
   position: relative;
 }
 .error-message {
-  position: absolute;
-  top: -15px;
-  right: 0;
+  margin-bottom: 15px;
+  margin-left: 20px;
   color: red;
   font-size: 12px;
-
 }
