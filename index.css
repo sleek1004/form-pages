@@ -73,20 +73,20 @@ h5 {
 
  
 }
-.form {
+#forms {
   flex: 1;
   margin-bottom: 20px;
   width:100%;
 }
 
-.form h1 {
+#forms h1 {
   font-size: 17px;
   margin-top: 0;
   margin: 10px;
   margin-left: 50px;
 }
 
-.form p {
+#forms p {
   font-size: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -95,9 +95,9 @@ h5 {
   margin-left: 50px;
 }
 
-.form input[type="text"],
-.form input[type="text"],
-.form input[type="number"] {
+#forms input[type="name"],
+#forms input[type="email"],
+#forms input[type="tel"] {
   display: block;
   width: 70%;
   padding: 10px;
@@ -254,7 +254,7 @@ input:checked + .slider:before {
   padding: 3px;
 }
 
-#pagenextbutton{
+#pageNextButton{
   margin-left: 190px;
   background-color: navy;
   color: #fff;
@@ -364,12 +364,12 @@ button {
   background-color: navy;
   font-size: 9px;
 }
-.form,.error-message {
-  position: relative;
-}
 .error-message {
-  margin-bottom: 15px;
-  margin-left: 20px;
+position:absolute;
   color: red;
-  font-size: 12px;
+  font-size: 17px;
+  margin:15px;
+}
+#errorMessage{
+  position: relative;
 }

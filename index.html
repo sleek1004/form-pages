@@ -23,18 +23,18 @@
         <p class="sideP">step4</p>
         <h5 class="sideH5">SUMMARY</h5>
       </sidebar>
-      <div class="form">
+      <div id="forms">
         <h1 class="h1P">Personal info</h1>
     <p>Please provide your name, email address, and phone number.</p>
-    <form>
-      <input type="text" placeholder="Name" />
-      <span class="error-message" style="display:none">This field is required.</span>
+    <form id="my-form">
+      <span class="error-message" id="errorMessage" style="display:none">This field is required.</span>
+      <input id="name-input" type="name" placeholder="Name" />
       <br />
-      <input type="text" placeholder="Email" />
       <span class="error-message" style="display:none">This field is required.</span>
+      <input id="email-input" type="email" placeholder="Email" />
       <br />
-      <input type="number" placeholder="e.g. +1 2345673" />
       <span class="error-message" style="display:none">This field is required.</span>
+      <input id="phone-input" type="tel" placeholder="e.g. +1 2345673" />
       <br />
       <button class="firstbutton">Next Step</button>
     </form>
