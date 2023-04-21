@@ -1,0 +1,39 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Finishing up</title>
+</head>
+<body>
+    <div id="finish">
+        <div id="top">
+        <h1 id="finishH1" >Finishing up</h1>
+        <p id="doubleCheck">Double-check everything looks Ok before confirming.</p>
+    </div>
+        <div id="summary">
+            <h1>Arcade</h1>
+            <hr id="line">
+            <p id="finish-Paragraph">online service</p>
+            <p id="finish-Paragraph2">Larger storage</p>
+       
+        </div>
+      <!--  <div id="selected-plan-section">
+            <h2>Selected Plan:</h2>
+            <p><span id="selected-plan-amount"></span></p>
+          </div>-->
+        <p id="total">Total (per month)</p>
+        <span></span>
+        <div>
+            <a href="page.html"><button class="finishButton">Go back</button></a>
+            <a href="page2.html"><button class="confirmFinish">Confirm</button></a>
+        </div>
+    </div>
+    <script>
+        let selectedPlan = localStorage.getItem("selectedPlan");
+        let selectedAmount = localStorage.getItem("selectedAmount");
+        let selectedPlanAmount = document.getElementById("selected-plan-amount");
+        selectedPlanAmount.textContent = selectedPlan + " " + selectedAmount;
+      </script>
+    <script src="finish.js"></script>
+</body>
+</html>
