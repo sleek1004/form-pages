@@ -121,9 +121,7 @@ h5 {
 .firstButton > a {
   color: whitesmoke;
 }
-.toggle-label{
-  color:grey;
-}
+
 
 /*#label{
     font-size: 12px;
@@ -185,8 +183,7 @@ h5 {
 }
 
 .toggle {
-  position: relative;
-  display: flex;
+  position: relative;  display: flex;
   align-items: center;
   margin-top: 10 px;
   background-color: rgb(193, 232, 232);
@@ -198,6 +195,8 @@ h5 {
 
 .toggle-label {
   margin-right: 10px;
+  color:grey;
+
 }
 
 .toggle input {
@@ -373,9 +372,7 @@ position:absolute;
 #errorMessage{
   position: relative;
 }
-.toggle-label {
-  color: grey;
-}
+
 
 .active {
   color:rgb(2, 2, 66);

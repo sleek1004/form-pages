@@ -50,4 +50,47 @@ function togglecheckbox() {
     localStorage.setItem("selectedPlan", selectedPlan);
     localStorage.setItem("selectedAmount", selectedAmount);
   }
+  const toggle = document.getElementById("toggle-box");
+toggle.addEventListener('change', function (){
+  if (this.checked) {
+    window.location.href = "page2Yearly.html";
+  } else {
+    window.location.href = "page2Monthly.html";
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+const toggle = document.getElementById("toggle-box");
+
+toggle.addEventListener('change', function (){
+    if(this.checked){
+        window.location.href = "page2Yearly.html";
+    } else{
+        window.location.href = "page2Monthly.html";
+    }
+});
+
+function toggleCheckBox() {
+    const monthlyLabel = document.getElementById("monthly-label");
+    const yearlyLabel = document.getElementById("yearly-label");
+    const checkbox2 = document.getElementById("toggle-box");
   
+    if (checkbox2.checked) {
+        yearlyLabel.classList.add("active");
+        monthlyLabel.classList.remove("active");
+    } else {
+        monthlyLabel.classList.add("active");
+        yearlyLabel.classList.remove("active");
+    }
+}
+
+toggleCheckBox();
